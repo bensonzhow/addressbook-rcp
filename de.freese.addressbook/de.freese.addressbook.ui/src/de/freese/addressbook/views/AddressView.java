@@ -216,7 +216,9 @@ public class AddressView extends ViewPart implements ISelectionListener
 	// TODO Binding: ViewersObservables->ViewerProperties->WidgetProperties
 	// ControlDecorationSupport.create(binding, SWT.TOP | SWT.RIGHT);
 
-	@SuppressWarnings("javadoc")
+	/**
+	 * @return {@link DataBindingContext}
+	 */
 	protected DataBindingContext initDataBindings()
 	{
 		DataBindingContext bindingContext = new DataBindingContext();
