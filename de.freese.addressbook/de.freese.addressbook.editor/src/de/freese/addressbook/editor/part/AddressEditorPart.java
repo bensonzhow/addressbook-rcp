@@ -126,6 +126,7 @@ public class AddressEditorPart extends EditorPart
 	/**
 	 * @param dirty boolean
 	 */
+	@SuppressWarnings("unused")
 	private void setDirty(final boolean dirty)
 	{
 

@@ -48,14 +48,19 @@ import de.freese.addressbook.services.IAddressService;
 public class AddressView extends ViewPart implements ISelectionListener
 {
 	/**
-	 * 
-	 */
-	private DataBindingContext m_bindingContext;
-
-	/**
 	 * The ID of the view as specified by the extension.
 	 */
 	public static final String ID = "de.freese.addressbook.views.AddressView"; //$NON-NLS-1$
+
+	/**
+	 * 
+	 */
+	private Combo comboLand;
+
+	/**
+	 * 
+	 */
+	private ComboViewer comboViewer = null;
 
 	/**
 	 * 
@@ -65,12 +70,13 @@ public class AddressView extends ViewPart implements ISelectionListener
 	/**
 	 * 
 	 */
-	private Text textName = null;
+	@SuppressWarnings("unused")
+	private DataBindingContext m_bindingContext;
 
 	/**
 	 * 
 	 */
-	private Text textStrasse = null;
+	private Text textName = null;
 
 	/**
 	 * 
@@ -85,12 +91,7 @@ public class AddressView extends ViewPart implements ISelectionListener
 	/**
 	 * 
 	 */
-	private ComboViewer comboViewer = null;
-
-	/**
-	 * 
-	 */
-	private Combo comboLand;
+	private Text textStrasse = null;
 
 	/**
 	 * Erstellt ein neues {@link AddressView} Object.
