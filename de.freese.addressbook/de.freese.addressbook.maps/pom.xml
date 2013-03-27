@@ -9,6 +9,10 @@
 	<artifactId>de.freese.addressbook.maps</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>Eclipse RCP.</description>
+	<url>http://maven.apache.org</url>
+	
 	<build>
 		<sourceDirectory>${basedir}/src</sourceDirectory>
 	</build>
