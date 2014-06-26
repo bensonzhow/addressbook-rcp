@@ -4,8 +4,7 @@ import java.util.Collection;
 import java.util.Random;
 
 /**
- * RandomData generates random values. This is helpful for generating test data for prototypes and
- * test cases.
+ * RandomData generates random values. This is helpful for generating test data for prototypes and test cases.
  * 
  * @author Thomas Freese
  */
@@ -299,12 +298,12 @@ public class RandomData
 	/**
 	 * 
 	 */
-	public static final String UPPERCASE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	public static final String MIXED_CHARS = RandomData.UPPERCASE_CHARS + RandomData.LOWERCASE_CHARS;
 
 	/**
 	 * 
 	 */
-	public static final String MIXED_CHARS = UPPERCASE_CHARS + LOWERCASE_CHARS;
+	public static final String UPPERCASE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	/**
 	 * 
@@ -390,6 +389,7 @@ public class RandomData
 	}
 
 	/**
+	 * @param <E> Konkreter Typ
 	 * @param elements {@link Collection}
 	 * @return Ojject
 	 */
@@ -400,6 +400,7 @@ public class RandomData
 	}
 
 	/**
+	 * @param <E> Konkreter Typ
 	 * @param elements Object[]
 	 * @return Object
 	 */
@@ -496,6 +497,7 @@ public class RandomData
 	}
 
 	/**
+	 * @param <T> Konkreter Typ
 	 * @param enumType {@link Class}
 	 * @return {@link Enum}
 	 */
